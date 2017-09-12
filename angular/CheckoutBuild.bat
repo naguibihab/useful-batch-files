@@ -36,9 +36,9 @@ set _isPause=false
 :: No defaults in that file, but I'm keeping that for consistency
 
 ::operations
-echo moving to %directory%:%secondary_source_code%
-%directory%:
-cd %secondary_source_code%
+echo moving to %frontend_directory%:%frontend_secondary_source_code%
+%frontend_directory%:
+cd %frontend_secondary_source_code%
 
 echo getting branch %_branch_name%
 call git fetch --all

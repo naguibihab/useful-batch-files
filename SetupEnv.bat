@@ -1,4 +1,4 @@
-@echo off
+@echo on
 :: General setup
 :: In order for that file not to be called twice we set this to true (Don't change this unless you know what you're doing)
 SET isSetupCalled=true
@@ -7,18 +7,24 @@ SET isSetupCalled=true
 SET isPause=true
 
 :: The base directory where your source code is located
-SET directory=D
+SET frontend_directory=D
+SET backend_directory=C
 
 :: The folders where your primary & secondary source code is located
 :: I like to have two source code folders, if you don't then just have them pointing to the same folder
-SET primary_source_code=\Dev\App
-SET secondary_source_code=\Dev\App2
+SET frontend_primary_source_code=\Dev\App
+SET frontend_secondary_source_code=\Dev\App2
+SET backend_primary_source_code=\xampp7\htdocs\php-teacher
+SET backend_secondary_source_code=\xampp7\htdocs\php-teacher
 
+:: Frameworks used. We use these as prefixes in some batch files
+SET frontend_framework=angular
+SET backend_framework=slim
 
 :::::::::::::::::::::::::::::::::::::::::::: XAMPP :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :: If you're using XAMPP then set these up
 :: Your destination folder
-SET base_destination=C:\xampp\htdocs
+SET base_destination=C:\xampp7\htdocs
 
 :: The base url that is pointing to your destination folder (in most cases it's localhost)
 SET base_url=http://10.0.2.65
