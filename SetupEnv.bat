@@ -36,11 +36,14 @@ SET build_file=dist
 
 ::::::: S3 ::::::::
 :: dev_s3_bucket is considered the default bucket in all batch files
-SET dev_s3_bucket=dev.edquire.com
-SET stg_s3_bucket=staging.edquire.com
-SET prod_s3_bucket=dashboard.edquire.com
+SET dev_s3_bucket=dev.myenv.com
+SET stg_s3_bucket=staging.myenv.com
+SET prod_s3_bucket=dashboard.myenv.com
 
 ::::::: Cloud Front ::::::
 set dev_cf_distribution_id=E24K1KWDFJPC0K
 set stg_cf_distribution_id=EKO145NU9NIFP
 set prod_cf_distribution_id=E362A9I7LUW959
+
+::::::: RDS ::::::
+set rds_list=rds-instance-1 rds-instance-2
