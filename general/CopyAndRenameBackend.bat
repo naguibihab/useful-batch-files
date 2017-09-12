@@ -23,6 +23,7 @@ goto defaults
 )
 :: else, get the inputs from the parameters
 set _branch=%1
+set _isPause=false
 
 ::defaults
 :defaults

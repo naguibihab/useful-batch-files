@@ -23,6 +23,7 @@ goto defaults
 set _branch_name=%1
 set _s3_bucket=%2
 set _cf_distribution_id=%3
+set _isPause=false
 
 ::defaults
 :defaults

@@ -32,21 +32,22 @@ set _isPause=%isPause%
 
 ::inputs
 if "%_human_or_batch%" equ "" (
-set /P _local_variables_must_start_with_underscore=question to user:
+:: REPLACE ME set /P _local_variables_must_start_with_underscore=question to user:
 
 goto defaults
 )
 :: else, get the inputs from the parameters
-set _local_variables_must_start_with_underscore=%1
+:: REPLACE ME set _local_variables_must_start_with_underscore=%1
+set _isPause=false
 
 ::defaults
 :defaults
-if "_local_variables_must_start_with_underscore" equ "" (
-set _local_variables_must_start_with_underscore=defaultValue
-)
+:: REPLACE ME if "_local_variables_must_start_with_underscore" equ "" (
+:: REPLACE ME set _local_variables_must_start_with_underscore=defaultValue
+:: REPLACE ME )
 
 ::operations
-Your code here
+:: REPLACE ME Your code here
 
 if %_isPause% equ true pause
 ```
