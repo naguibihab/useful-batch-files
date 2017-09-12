@@ -16,6 +16,7 @@ if "%_human_or_batch%" equ "" (
 set /P _source=Source folder: 
 set /P _s3_bucket=Bucket leave empty for default: 
 set /P _cf_distribution_id=Cloud Front Distribution ID leave empty for default:
+
 goto defaults
 )
 :: else, get the inputs from the parameters

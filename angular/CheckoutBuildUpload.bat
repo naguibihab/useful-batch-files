@@ -16,7 +16,8 @@ if "%_human_or_batch%" equ "" (
 set /P _branch_name=Branch:
 set /P _s3_bucket=Bucket. leave empty for default: 
 set /P _cf_distribution_id=Cloud Front Distribution ID. leave empty for default: 
-goto operations
+
+goto defaults
 )
 :: else, get the inputs from the parameters
 set _branch_name=%1
@@ -24,6 +25,7 @@ set _s3_bucket=%2
 set _cf_distribution_id=%3
 
 ::defaults
+:defaults
 if "_s3_bucket" equ "" (
 set _s3_bucket=%dev_s3_bucket%
 )
@@ -32,7 +34,6 @@ set _cf_distribution_id=%dev_cf_distribution_id%
 )
 
 ::operations
-:operations
 set _source=%base_destination%\%_branch_name%
 REM calling CheckoutBuild.bat
 call CheckoutBuild.bat %_branch_name%
