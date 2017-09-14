@@ -1,4 +1,4 @@
-@echo on
+@echo off
 :: General setup
 :: In order for that file not to be called twice we set this to true (Don't change this unless you know what you're doing)
 SET isSetupCalled=true

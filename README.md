@@ -13,6 +13,8 @@ Especially useful for:
 	- Copy folder & append to its name
 	- Open git at a particular location
 	
+You can run any of these batch files manually and enter the inputs as they come up or by calling the batch file in cmd and passing the inputs as parameters, i.e. `D:\Dev\useful-batch-files\angular\CheckoutBuild.bat master`
+	
 Feel free to fork and contribute to that repo
 
 ### To create a new batch file use this template:
