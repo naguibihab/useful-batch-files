@@ -36,9 +36,7 @@ set _cf_distribution_id=%dev_cf_distribution_id%
 
 ::operations
 set _source=%base_destination%\%_branch_name%
-REM calling CheckoutBuild.bat
-call CheckoutBuild.bat %_branch_name%
-REM calling UploadToS3.bat
-call ../aws/UploadToS3.bat %_source% %_s3_bucket% %_cf_distribution_id%
+call %locationOfBatch%\angular\CheckoutBuild.bat %_branch_name%
+call %locationOfBatch%\aws\UploadToS3.bat %_source% %_s3_bucket% %_cf_distribution_id%
 
 if %_isPause% equ true pause

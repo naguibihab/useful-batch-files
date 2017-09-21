@@ -53,3 +53,23 @@ set _isPause=false
 
 if %_isPause% equ true pause
 ```
+
+### If your batch file doesn't require any inputs then use this smaller version
+```
+REM ********************************************************************************
+REM Explain the batch file here
+REM
+REM prerequisits: Any prerequisits type them here
+REM ********************************************************************************
+
+::setup
+if "%isSetupCalled%" equ "" (
+call ../SetupEnv.bat
+)
+set _isPause=%isPause%
+
+::operations
+:: REPLACE ME Your code here
+
+if %_isPause% equ true pause
+```

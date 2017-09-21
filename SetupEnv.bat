@@ -1,5 +1,7 @@
-@echo off
+@echo on
 :: General setup
+:: The location of your batch files
+SET locationOfBatch=D:\Dev\useful-batch-files
 :: In order for that file not to be called twice we set this to true (Don't change this unless you know what you're doing)
 SET isSetupCalled=true
 
@@ -19,7 +21,12 @@ SET backend_secondary_source_code=\xampp7\htdocs\php-teacher
 
 :: Frameworks used. We use these as prefixes in some batch files
 SET frontend_framework=angular
-SET backend_framework=slim
+SET backend_framework=slim 
+
+:: Location of the downloadable url of the apps you use and where they get downloaded
+:: Set this up if you're want to use DownloadMyApps.bat
+SET my_apps=..\config\myapps.txt
+SET downloads=C:\Users\n.ihab\Downloads
 
 :::::::::::::::::::::::::::::::::::::::::::: XAMPP :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :: If you're using XAMPP then set these up
@@ -42,9 +49,9 @@ SET build_file=dist
 
 ::::::: S3 ::::::::
 :: dev_s3_bucket is considered the default bucket in all batch files
-SET dev_s3_bucket=dev.myenv.com
-SET stg_s3_bucket=staging.myenv.com
-SET prod_s3_bucket=dashboard.myenv.com
+SET dev_s3_bucket=dev.edquire.com
+SET stg_s3_bucket=staging.edquire.com
+SET prod_s3_bucket=dashboard.edquire.com
 
 ::::::: Cloud Front ::::::
 set dev_cf_distribution_id=E24K1KWDFJPC0K
