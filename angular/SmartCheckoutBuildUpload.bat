@@ -8,7 +8,7 @@ REM ****************************************************************************
 
 ::setup
 if "%isSetupCalled%" equ "" (
-call %locationOfBatch%\SetupEnv.bat
+call ../SetupEnv.bat
 )
 set _human_or_batch=%1
 set _isPause=%isPause%
