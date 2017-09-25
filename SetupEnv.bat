@@ -6,7 +6,7 @@ SET locationOfBatch=D:\Dev\useful-batch-files
 SET isSetupCalled=true
 
 :: To pause or not after running a batch file
-SET isPause=true
+SET isPause=false
 
 :: The base directory where your source code is located
 SET frontend_directory=D
@@ -40,7 +40,7 @@ SET base_url=http://10.0.2.65
 :::::::::::::::::::::::::::::::::::::::::: Angular :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :: If you're using angular set these up
 :: The folder where you built code is copied
-SET build_file=dist
+SET build_folder=dist
 
 
 :::::::::::::::::::::::::::::::::::::::::: AWS :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
