@@ -1,4 +1,5 @@
 REM ********************************************************************************
+REM							SmartCheckoutBuildUpload.bat
 REM This file does exactly what CheckoutBuildUpload does but smarter as it doesn't 
 REM require you to enter in the bucket or distribution but instead uses the 
 REM environments that you have saved in SetupEnv

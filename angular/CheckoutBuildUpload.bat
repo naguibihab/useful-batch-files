@@ -1,4 +1,5 @@
 REM ********************************************************************************
+REM								CheckoutBuildUpload.bat
 REM This file does everything that CheckoutBuild does then it calls UploadToS3 to upload it
 REM
 REM prerequisits: git, bower, grunt, aws cli & access, CheckoutBuild.bat

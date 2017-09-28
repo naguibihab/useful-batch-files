@@ -1,4 +1,5 @@
 REM ********************************************************************************
+REM								CheckoutBuild.bat
 REM I use that bat file when someone asks me to build them a particular branch
 REM it goes to the secondary source code (in case i'm in the middle of something
 REM and don't want to commit or stash) fetches from git, checksout the branch

@@ -1,4 +1,5 @@
 REM ********************************************************************************
+REM								OpenGitForPrimary.bat
 REM Simply opens a git bash for the primary source codes. This can be used on
 REM computer startup
 REM

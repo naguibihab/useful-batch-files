@@ -1,4 +1,5 @@
 REM ********************************************************************************
+REM								StopStartRDS.bat
 REM This file starts or stops your RDS instances
 REM
 REM prerequisits: aws cli & access

@@ -1,4 +1,5 @@
 REM ********************************************************************************
+REM								UploadToS3.bat
 REM This file uploads to an S3 bucket
 REM
 REM prerequisits: git, bower, grunt, aws cli & access, CheckoutBuild.bat

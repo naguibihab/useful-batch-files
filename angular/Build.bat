@@ -1,4 +1,5 @@
 REM ********************************************************************************
+REM									Build.bat
 REM As opposed to CheckoutBuild.bat this file builds the primary frontend sourcecode
 REM and copies it to the targeted location without checking out from git.
 REM I use that to build code that I don't want to commit
