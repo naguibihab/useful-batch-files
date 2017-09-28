@@ -42,13 +42,10 @@ set _cf_distribution_id=%stg_cf_distribution_id%
 )
 if /I %_env% equ p (
 set _confirm_prod=n
-set /P _confirm_prod=Uploading to production, type [y] to confirm:
-
-if /I "%_confirm_prod%" equ "y" (
+echo Uploading to production, press any key to confirm.
+pause
 set _s3_bucket=%prod_s3_bucket%
 set _cf_distribution_id=%prod_cf_distribution_id%
-)
-
 )
 
 call %locationOfBatch%\angular\CheckoutBuildUpload.bat %_branch_name% %_s3_bucket% %_cf_distribution_id%
