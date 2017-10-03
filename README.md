@@ -24,6 +24,7 @@ Feel free to fork and contribute to that repo
 ### To create a new batch file use this template:
 ```
 REM ********************************************************************************
+REM										FileNameHere.bat
 REM Explain the batch file here
 REM
 REM prerequisits: Any prerequisits type them here
@@ -61,6 +62,7 @@ if %_isPause% equ true pause
 ### If your batch file doesn't require any inputs then use this smaller version
 ```
 REM ********************************************************************************
+REM										FileNameHere.bat
 REM Explain the batch file here
 REM
 REM prerequisits: Any prerequisits type them here

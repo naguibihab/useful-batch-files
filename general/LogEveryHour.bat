@@ -1,4 +1,5 @@
 REM ********************************************************************************
+REM								LogEveryHour.bat
 REM This batch file writes in a log everytime it opens up. I use it to log my
 REM energy levels every hour and set this file up with task scheduler
 REM
