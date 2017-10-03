@@ -1,7 +1,8 @@
 @echo on
+:: IMPORTANT PREREQUSITE: You must setup an environment variable by the name BATCHLOCATION pointing to the 
+:: directory that contains these batch files
+
 :: General setup
-:: The location of your batch files
-SET locationOfBatch=D:\Dev\useful-batch-files
 :: In order for that file not to be called twice we set this to true (Don't change this unless you know what you're doing)
 SET isSetupCalled=true
 
@@ -21,12 +22,16 @@ SET backend_secondary_source_code=\xampp7\htdocs\php-teacher
 
 :: Frameworks used. We use these as prefixes in some batch files
 SET frontend_framework=angular
-SET backend_framework=slim 
+SET backend_framework=slim
 
 :: Location of the downloadable url of the apps you use and where they get downloaded
-:: Set this up if you're want to use DownloadMyApps.bat
+:: Set this up if you're using DownloadMyApps.bat
 SET my_apps=..\config\myapps.txt
 SET downloads=C:\Users\n.ihab\Downloads
+
+:: Path to your log file
+:: Set this up if you're using LogEveryHour.bat
+SET log_file=C:\Users\n.ihab\Google Drive\Productivity\energy levels.csv
 
 :::::::::::::::::::::::::::::::::::::::::::: XAMPP :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :: If you're using XAMPP then set these up

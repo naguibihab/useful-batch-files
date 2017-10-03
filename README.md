@@ -14,6 +14,10 @@ Especially useful for:
 	- Open git at a particular location
 	
 You can run any of these batch files manually and enter the inputs as they come up or by calling the batch file in cmd and passing the inputs as parameters, i.e. `D:\Dev\useful-batch-files\angular\CheckoutBuild.bat master`
+
+##### IMPORTANT PREREQUSITE:
+You must setup an environment variable by the name **BATCHLOCATION** pointing to the directory that contains these batch files
+
 	
 Feel free to fork and contribute to that repo
 
@@ -27,7 +31,7 @@ REM ****************************************************************************
 
 ::setup
 if "%isSetupCalled%" equ "" (
-call ../SetupEnv.bat
+call %BATCHLOCATION%/SetupEnv.bat
 )
 set _human_or_batch=%1
 set _isPause=%isPause%
@@ -44,7 +48,7 @@ set _isPause=false
 
 ::defaults
 :defaults
-:: REPLACE ME if "_local_variables_must_start_with_underscore" equ "" (
+:: REPLACE ME if "%_local_variables_must_start_with_underscore%" equ "" (
 :: REPLACE ME set _local_variables_must_start_with_underscore=defaultValue
 :: REPLACE ME )
 
@@ -64,7 +68,7 @@ REM ****************************************************************************
 
 ::setup
 if "%isSetupCalled%" equ "" (
-call ../SetupEnv.bat
+call %BATCHLOCATION%/SetupEnv.bat
 )
 set _isPause=%isPause%
 
