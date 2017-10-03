@@ -35,6 +35,6 @@ set _notes=defaultValue
 )
 
 ::operations
-ECHO %DATE%,%_energy_level%,%_notes%>>"%log_file%"
+ECHO %DATE%,%TIME%,%_energy_level%,%_notes%>>"%log_file%"
 
 if %_isPause% equ true pause
