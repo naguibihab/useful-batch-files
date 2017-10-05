@@ -1,4 +1,4 @@
-@echo off
+@echo on
 :: IMPORTANT PREREQUSITE: You must setup an environment variable by the name BATCHLOCATION pointing to the 
 :: directory that contains these batch files
 

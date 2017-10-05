@@ -49,6 +49,6 @@ set _s3_bucket=%prod_s3_bucket%
 set _cf_distribution_id=%prod_cf_distribution_id%
 )
 
-call %locationOfBatch%\angular\CheckoutBuildUpload.bat %_branch_name% %_s3_bucket% %_cf_distribution_id%
+call %BATCHLOCATION%\angular\CheckoutBuildUpload.bat %_branch_name% %_s3_bucket% %_cf_distribution_id%
 
 if %_isPause% equ true pause
