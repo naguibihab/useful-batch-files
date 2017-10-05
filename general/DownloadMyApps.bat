@@ -1,5 +1,5 @@
 @echo off
-SET app_list=app_list.txt
+SET app_list=config/app_list.txt
 SET CURRENTDIR="%cd%"
 SET app_path=%CURRENTDIR%/apps
 
