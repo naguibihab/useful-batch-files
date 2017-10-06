@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 REM ********************************************************************************
 REM								DownloadMyApps.bat
 REM This file automatically downloads the apps specified in %my_apps%
