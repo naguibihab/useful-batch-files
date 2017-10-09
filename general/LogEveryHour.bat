@@ -28,10 +28,10 @@ set _isPause=false
 ::defaults
 :defaults
 if "%_energy_level%" equ "" (
-set _energy_level=defaultValue
+set _energy_level=""
 )
 if "%_notes%" equ "" (
-set _notes=defaultValue
+set _notes=""
 )
 
 ::operations
