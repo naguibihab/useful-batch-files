@@ -15,8 +15,8 @@ set _isPause=%isPause%
 
 ::inputs
 if "%_human_or_batch%" equ "" (
-set /P _energy_level=Energy Level:
-set /P _notes=Notes: 
+set /P _energy_level=Energy Level (0-10):
+set /P _notes=Notes:
 
 goto defaults
 )

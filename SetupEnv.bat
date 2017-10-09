@@ -26,7 +26,7 @@ SET backend_framework=slim
 
 :: Location of the downloadable url of the apps you use and where they get downloaded
 :: Set this up if you're using DownloadMyApps.bat
-SET my_apps=..\config\myapps.txt
+SET my_apps=%BATCHLOCATION%\config\myapps.txt
 SET downloads=C:\Users\n.ihab\Downloads
 
 :: Path to your log file
