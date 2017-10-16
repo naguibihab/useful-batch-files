@@ -19,7 +19,7 @@ cd %frontend_primary_source_code%
 start "" "%SYSTEMDRIVE%\Program Files\Git\git-bash.exe"
 
 REM Opening sublime on frontned
-call "subl.exe" %frontend_directory%/%frontend_primary_source_code%
+call subl.exe %frontend_directory%:%frontend_primary_source_code%
 
 REM Opening git on backend
 %backend_directory%:
@@ -27,7 +27,7 @@ cd %backend_primary_source_code%
 start "" "%SYSTEMDRIVE%\Program Files\Git\git-bash.exe"
 
 REM Opening sublime on backend
-call "subl.exe" %backend_directory%/%backend_primary_source_code%
+call subl.exe %backend_directory%:%backend_primary_source_code%
 
 
 if %_isPause% equ true pause
