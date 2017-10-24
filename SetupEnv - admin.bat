@@ -16,9 +16,9 @@ SET backend_directory=C
 :: The folders where your primary & secondary source code is located
 :: I like to have two source code folders, if you don't then just have them pointing to the same folder
 SET frontend_primary_source_code=\Dev\admin
-SET frontend_secondary_source_code=\Dev\admin
+SET frontend_secondary_source_code=\Dev\admin2
 SET backend_primary_source_code=\xampp7\htdocs\php-admin
-SET backend_secondary_source_code=\xampp7\htdocs\php-admin
+SET backend_secondary_source_code=\xampp7\htdocs\php-admin2
 
 :: Frameworks used. We use these as prefixes in some batch files
 SET frontend_framework=angular

@@ -18,7 +18,7 @@ SET backend_directory=C
 SET frontend_primary_source_code=\Dev\App
 SET frontend_secondary_source_code=\Dev\App2
 SET backend_primary_source_code=\xampp7\htdocs\php-teacher
-SET backend_secondary_source_code=\xampp7\htdocs\php-teacher
+SET backend_secondary_source_code=\xampp7\htdocs\php-teacher2
 
 :: Frameworks used. We use these as prefixes in some batch files
 SET frontend_framework=angular
