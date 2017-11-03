@@ -12,14 +12,12 @@ call %BATCHLOCATION%/SetupEnv.bat
 set _isPause=%isPause%
 
 ::operations
-set app_list=%my_apps%
-set app_path=%downloads%
-for /f %%i in (%app_list%) do (
+for /f %%i in (%my_apps%) do (
     echo "Downloading %%i..."
-    BITSADMIN /transfer /download %%i %app_path%\setup.exe > nul
+    BITSADMIN /transfer /download %%i %downloads%\setup.exe > nul
     echo "Installing %%i"
-    %app_path%\setup.exe /S
-    del %app_path%\setup.exe
+    %downloads%\setup.exe /S
+    del %downloads%\setup.exe
 )
 
 if %_isPause% equ true pause
