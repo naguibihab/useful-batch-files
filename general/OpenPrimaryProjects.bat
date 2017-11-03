@@ -3,7 +3,8 @@ REM								OpenGitForPrimary.bat
 REM Simply opens a git bash & Sublime IDE pointed at the primary source codes. 
 REM This can be used on computer startup
 REM
-REM prerequisits: git-bash, sublime in PATH
+REM prerequisits: git-bash, sublime in PATH,
+REM having a start.bat on the frontend projects
 REM ********************************************************************************
 
 ::setup
@@ -20,6 +21,9 @@ start "" "%SYSTEMDRIVE%\Program Files\Git\git-bash.exe"
 
 REM Opening sublime on frontned
 call subl.exe %frontend_directory%:%frontend_primary_source_code%
+
+REM Run the serve file on frontend
+start "Serve Window" cmd /c serve.bat
 
 REM Opening git on backend
 %backend_directory%:
