@@ -43,7 +43,7 @@ cd %frontend_secondary_source_code%
 
 echo getting branch %_branch_name%
 call git fetch --all
-call git checkout %_branch_name% --force
+call git checkout origin/%_branch_name% --force
 call git pull --force
 
 echo building...
