@@ -10,10 +10,14 @@ REM ****************************************************************************
 ::setup (Because that file is modifying the setup file we don't import it here)
 set _human_or_batch=%1
 set _isPause=%isPause%
+set _current_env_file=config/currentenv.txt
+cd ..
+:: Read current env
+set /p _from_env=<%_current_env_file%
 
 ::inputs
 if "%_human_or_batch%" equ "" (
-set /P _env=Switch to environment:
+set /P _env=Switch to environment [current enviroment: %_from_env%]:
 
 goto defaults
 )
@@ -28,10 +32,7 @@ set _env=main
 )
 
 ::operations
-set _current_env_file=config/currentenv.txt
-cd ..
-:: Read current env
-set /p _from_env=<%_current_env_file%
+
 :: Rename files
 ren SetupEnv.bat SetupEnv-%_from_env%.bat
 ren SetupEnv-%_env%.bat SetupEnv.bat
