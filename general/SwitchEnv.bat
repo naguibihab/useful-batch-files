@@ -18,7 +18,6 @@ set /p _from_env=<%_current_env_file%
 ::inputs
 if "%_human_or_batch%" equ "" (
 set /P _env=Switch to environment [current enviroment: %_from_env%]:
-
 goto defaults
 )
 :: else, get the inputs from the parameters

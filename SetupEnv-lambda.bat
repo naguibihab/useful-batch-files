@@ -66,4 +66,12 @@ set stg_cf_distribution_id=
 set prod_cf_distribution_id=
 
 ::::::: RDS ::::::
-set rds_list=
+set rds_list=rds-instance-1 rds-instance-2
+
+:::::::::::::::::::::::::::::::::::::::::: Operations :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:: Operations that happen for each batch file such as printing out the current envrionment
+set _current_env_file=config/currentenv.txt
+:: Read current env
+cd ..
+set /p _current_env=<%_current_env_file%
+echo CURRENT ENVIRONMENT: %_current_env%
