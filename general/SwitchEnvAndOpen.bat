@@ -12,7 +12,7 @@ call %BATCHLOCATION%/SetupEnv.bat
 set _isPause=%isPause%
 
 ::operations
-call SwitchEnv.bat
-call OpenPrimaryProjects
+call %BATCHLOCATION%/general/SwitchEnv.bat
+call %BATCHLOCATION%/general/OpenPrimaryProjects
 
 if %_isPause% equ true pause
