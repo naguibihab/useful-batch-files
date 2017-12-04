@@ -16,4 +16,4 @@ wmic os get caption
 wmic os get osarchitecture
 pause
 
-if %_isPause% equ true pause
+if "%_isPause%" equ "true" pause

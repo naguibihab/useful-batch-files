@@ -48,4 +48,4 @@ call git pull --force
 call git checkout -b release-%_release_version%
 call git push --set-upstream origin release-%_release_version%
 
-if %_isPause% equ true pause
+if "%_isPause%" equ "true" pause

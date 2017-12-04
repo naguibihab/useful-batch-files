@@ -20,4 +20,4 @@ for /f %%i in (%my_apps%) do (
     del %downloads%\setup.exe
 )
 
-if %_isPause% equ true pause
+if "%_isPause%" equ "true" pause

@@ -56,7 +56,7 @@ set _isPause=false
 ::operations
 :: REPLACE ME Your code here
 
-if %_isPause% equ true pause
+if "%_isPause%" equ "true" pause
 ```
 
 ### If your batch file doesn't require any inputs then use this smaller version
@@ -77,5 +77,5 @@ set _isPause=%isPause%
 ::operations
 :: REPLACE ME Your code here
 
-if %_isPause% equ true pause
+if "%_isPause%" equ "true" pause
 ```

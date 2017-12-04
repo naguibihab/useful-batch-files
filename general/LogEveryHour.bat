@@ -38,4 +38,4 @@ set _notes=""
 echo Time is now %TIME% 
 echo %DATE%,%TIME%,%_energy_level%,%_notes%>>"%log_file%"
 
-if %_isPause% equ true pause
+if "%_isPause%" equ "true" pause

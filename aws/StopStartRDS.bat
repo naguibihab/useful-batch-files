@@ -45,4 +45,4 @@ goto :retryaction
     call aws rds %_command%-db-instance --db-instance-identifier %%a
 ))
 
-if %_isPause% equ true pause
+if "%_isPause%" equ "true" pause

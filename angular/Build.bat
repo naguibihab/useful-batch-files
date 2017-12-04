@@ -43,4 +43,4 @@ xcopy "%build_folder%" "%base_destination%\%_branch_name%" /s/e/c/y/f
 
 start "" %base_url%/%_branch_name%
 
-if %_isPause% equ true pause
+if "%_isPause%" equ "true" pause

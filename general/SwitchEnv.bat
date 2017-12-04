@@ -38,4 +38,4 @@ ren SetupEnv-%_env%.bat SetupEnv.bat
 :: Write current env
 echo %_env%>%_current_env_file%
 
-if %_isPause% equ true pause
+if "%_isPause%" equ "true" pause

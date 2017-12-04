@@ -19,4 +19,4 @@ call git pull --force
 call git merge origin/production
 call git push
 
-if %_isPause% equ true pause
+if "%_isPause%" equ "true" pause

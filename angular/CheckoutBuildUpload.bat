@@ -40,4 +40,4 @@ set _source=%base_destination%\%_branch_name%
 call %BATCHLOCATION%\angular\CheckoutBuild.bat %_branch_name%
 call %BATCHLOCATION%\aws\UploadToS3.bat %_source% %_s3_bucket% %_cf_distribution_id%
 
-if %_isPause% equ true pause
+if "%_isPause%" equ "true" pause

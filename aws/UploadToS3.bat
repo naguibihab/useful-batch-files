@@ -44,4 +44,4 @@ call aws cloudfront create-invalidation --distribution-id %_cf_distribution_id% 
 )
 
 echo All done, uploaded to %_s3_bucket%
-if %_isPause% equ true pause
+if "%_isPause%" equ "true" pause

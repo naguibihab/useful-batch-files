@@ -37,4 +37,4 @@ REM Opening sublime on backend
 call subl.exe %backend_directory%:%backend_primary_source_code%
 )
 
-if %_isPause% equ true pause
+if "%_isPause%" equ "true" pause
