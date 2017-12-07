@@ -33,6 +33,6 @@ set _branch=master
 )
 
 ::operations
-xcopy "%backend_directory%:%backend_secondary_source_code%" "%base_destination%\%backend_framework%-%_branch%" /s/e/c/y/f
+xcopy "%backend_directory%:%backend_primary_source_code%" "%base_destination%\%backend_framework%-%_branch%" /s/e/c/y/f
 
 if "%_isPause%" equ "true" pause
