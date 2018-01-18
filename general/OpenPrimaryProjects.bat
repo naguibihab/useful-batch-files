@@ -23,8 +23,11 @@ start "" "%SYSTEMDRIVE%\Program Files\Git\git-bash.exe"
 REM Opening sublime on frontned
 call subl.exe %frontend_directory%:%frontend_primary_source_code%
 
+REM You should only be using one of the following options
 REM Run the serve file on frontend
 start "Serve Window" cmd /c serve.bat
+REM Run yarn start
+start yarn start
 )
 
 if "%backend_directory%" neq "" (
