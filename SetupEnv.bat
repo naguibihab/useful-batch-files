@@ -11,19 +11,19 @@ SET isSetupCalled=true
 SET isPause=false
 
 :: The base directory where your source code is located
-SET frontend_directory=D
-SET backend_directory=C
+SET frontend_directory=C
+SET backend_directory=
 
 :: The folders where your primary & secondary source code is located
 :: I like to have two source code folders, if you don't then just have them pointing to the same folder
-SET frontend_primary_source_code=\Dev\App
-SET frontend_secondary_source_code=\Dev\App2
-SET backend_primary_source_code=\xampp7\htdocs\php-teacher
-SET backend_secondary_source_code=\xampp7\htdocs\php-teacher2
+SET frontend_primary_source_code=\xampp\htdocs\csiro\paidright
+SET frontend_secondary_source_code=\xampp\htdocs\csiro\paidrightcopy
+SET backend_primary_source_code=
+SET backend_secondary_source_code=
 
 :: Frameworks used. We use these as prefixes in some batch files
 SET frontend_framework=angular
-SET backend_framework=slim
+SET backend_framework=
 
 :: Location of the downloadable url of the apps you use and where they get downloaded
 :: Set this up if you're using DownloadMyApps.bat
@@ -37,10 +37,10 @@ SET log_file=C:\Users\n.ihab\Google Drive\Productivity\energy levels.csv
 :::::::::::::::::::::::::::::::::::::::::::: XAMPP :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :: If you're using XAMPP then set these up
 :: Your destination folder
-SET base_destination=C:\xampp7\htdocs
+SET base_destination=C:\xampp\htdocs
 
 :: The base url that is pointing to your destination folder (in most cases it's localhost)
-SET base_url=http://10.0.2.65
+SET base_url=http://localhost
 
 
 :::::::::::::::::::::::::::::::::::::::::: Angular :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -56,14 +56,14 @@ SET build_folder=dist
 ::::::: S3 ::::::::
 :: dev_s3_bucket is considered the default bucket in all batch files
 :: Any sensetive data can be stored as an environment variable
-SET dev_s3_bucket=%ENV_dev_s3_bucket%
-SET stg_s3_bucket=%ENV_stg_s3_bucket%
-SET prod_s3_bucket=%ENV_prod_s3_bucket%
+SET dev_s3_bucket=
+SET stg_s3_bucket=
+SET prod_s3_bucket=
 
 ::::::: Cloud Front ::::::
-set dev_cf_distribution_id=%ENV_dev_cf_dist%
-set stg_cf_distribution_id=%ENV_stg_cf_dist%
-set prod_cf_distribution_id=%ENV_prod_cf_dist%
+set dev_cf_distribution_id=
+set stg_cf_distribution_id=
+set prod_cf_distribution_id=
 
 ::::::: RDS ::::::
 set rds_list=rds-instance-1 rds-instance-2
