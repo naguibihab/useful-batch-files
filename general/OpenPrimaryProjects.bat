@@ -27,7 +27,7 @@ REM You should only be using one of the following options
 REM Run the serve file on frontend
 start "Serve Window" cmd /c serve.bat
 REM Run yarn start
-start yarn start
+start yarn start --open
 )
 
 if "%backend_directory%" neq "" (
