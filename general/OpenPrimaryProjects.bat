@@ -14,6 +14,14 @@ call %BATCHLOCATION%/SetupEnv.bat
 set _isPause=%isPause%
 
 ::operations
+
+::::: Database :::::
+if "%mongo_bin%" neq "" (
+REM initiating mongo
+start "" "%mongo_bin%" --dbpath "%mongo_dbpath%"
+)
+
+::::: Frontend :::::
 if "%frontend_directory%" neq "" (
 REM Opening git on frontend
 %frontend_directory%:
@@ -23,13 +31,14 @@ start "" "%SYSTEMDRIVE%\Program Files\Git\git-bash.exe"
 REM Opening sublime on frontned
 call subl.exe %frontend_directory%:%frontend_primary_source_code%
 
-REM You should only be using one of the following options
-REM Run the serve file on frontend
-start "Serve Window" cmd /c serve.bat
+if "%frontend_framework%" equ "angular" (
 REM Run yarn start
 start yarn start --open
 )
 
+)
+
+::::: Backend :::::
 if "%backend_directory%" neq "" (
 REM Opening git on backend
 %backend_directory%:
@@ -38,6 +47,13 @@ start "" "%SYSTEMDRIVE%\Program Files\Git\git-bash.exe"
 
 REM Opening sublime on backend
 call subl.exe %backend_directory%:%backend_primary_source_code%
+
+if "%backend_framework%" equ "go" (
+call go build
+start "" %go_bin% -logtostderr=true -v=-1
 )
+
+)
+
 
 if "%_isPause%" equ "true" pause
