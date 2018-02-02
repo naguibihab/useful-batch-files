@@ -1,4 +1,4 @@
-:: Teacher Project
+:: Paidright Project
 @echo on
 :: IMPORTANT PREREQUSITE: You must setup an environment variable by the name BATCHLOCATION pointing to the 
 :: directory that contains these batch files
@@ -12,18 +12,18 @@ SET isPause=false
 
 :: The base directory where your source code is located
 SET frontend_directory=C
-SET backend_directory=
+SET backend_directory=C
 
 :: The folders where your primary & secondary source code is located
 :: I like to have two source code folders, if you don't then just have them pointing to the same folder
 SET frontend_primary_source_code=\xampp\htdocs\csiro\paidright
-SET frontend_secondary_source_code=\xampp\htdocs\csiro\paidrightcopy
-SET backend_primary_source_code=
-SET backend_secondary_source_code=
+SET frontend_secondary_source_code=\xampp\htdocs\csiro\paidright_copy
+SET backend_primary_source_code=\xampp\htdocs\golang-projects\src\data61.githost.io\digital-regulation\data-import-service
+SET backend_secondary_source_code=\xampp\htdocs\golang-projects\src\data61.githost.io\digital-regulation\data-import-service_copy
 
 :: Frameworks used. We use these as prefixes in some batch files
 SET frontend_framework=angular
-SET backend_framework=
+SET backend_framework=go
 
 :: Location of the downloadable url of the apps you use and where they get downloaded
 :: Set this up if you're using DownloadMyApps.bat
@@ -40,7 +40,7 @@ SET log_file=C:\Users\n.ihab\Google Drive\Productivity\energy levels.csv
 SET base_destination=C:\xampp\htdocs
 
 :: The base url that is pointing to your destination folder (in most cases it's localhost)
-SET base_url=http://localhost
+SET base_url=http://10.0.2.65
 
 
 :::::::::::::::::::::::::::::::::::::::::: Angular :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -48,6 +48,17 @@ SET base_url=http://localhost
 :: The folder where you built code is copied
 SET build_folder=dist
 
+:::::::::::::::::::::::::::::::::::::::::: MongoDB :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:: If you're using MongoDB set these up
+:: Location of mongod.exe
+SET mongo_bin=C:\Program Files\MongoDB\Server\3.6\bin\mongod.exe
+:: Database directory Path
+SET mongo_dbpath=C:\xampp\htdocs\mongo\data\db
+
+::::::::::::::::::::::::::::::::::::::::::   Go    ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:: If you're using Golang set these up
+:: Name of binary file generated
+SET go_bin=data-import-service
 
 :::::::::::::::::::::::::::::::::::::::::: AWS :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :: If you're using AWS and have the CLI installed then set these up
@@ -56,14 +67,14 @@ SET build_folder=dist
 ::::::: S3 ::::::::
 :: dev_s3_bucket is considered the default bucket in all batch files
 :: Any sensetive data can be stored as an environment variable
-SET dev_s3_bucket=
-SET stg_s3_bucket=
-SET prod_s3_bucket=
+SET dev_s3_bucket=%ENV_dev_s3_bucket%
+SET stg_s3_bucket=%ENV_stg_s3_bucket%
+SET prod_s3_bucket=%ENV_prod_s3_bucket%
 
 ::::::: Cloud Front ::::::
-set dev_cf_distribution_id=
-set stg_cf_distribution_id=
-set prod_cf_distribution_id=
+set dev_cf_distribution_id=%ENV_dev_cf_dist%
+set stg_cf_distribution_id=%ENV_stg_cf_dist%
+set prod_cf_distribution_id=%ENV_prod_cf_dist%
 
 ::::::: RDS ::::::
 set rds_list=rds-instance-1 rds-instance-2
