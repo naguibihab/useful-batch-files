@@ -9,3 +9,4 @@ https://download.filezilla-project.org/client/FileZilla_3.30.0_win64-setup_bundl
 https://download.scdn.co/SpotifySetup.exe
 https://downloads.slack-edge.com/releases_x64/SlackSetup.exe
 https://sourceforge.net/projects/kdiff3/files/latest/download?source=typ_redirect
+https://www.mongodb.com/dr/fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.2-signed.msi/download
