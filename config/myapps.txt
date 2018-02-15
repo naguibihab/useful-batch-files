@@ -8,3 +8,4 @@ https://app.getpostman.com/app/download/win64?_ga=2.192680419.895914925.15186656
 https://download.filezilla-project.org/client/FileZilla_3.30.0_win64-setup_bundled.exe
 https://download.scdn.co/SpotifySetup.exe
 https://downloads.slack-edge.com/releases_x64/SlackSetup.exe
+https://sourceforge.net/projects/kdiff3/files/latest/download?source=typ_redirect
