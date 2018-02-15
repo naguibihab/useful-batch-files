@@ -11,3 +11,4 @@ https://downloads.slack-edge.com/releases_x64/SlackSetup.exe
 https://sourceforge.net/projects/kdiff3/files/latest/download?source=typ_redirect
 https://www.mongodb.com/dr/fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.6.2-signed.msi/download
 https://nodejs.org/dist/v8.9.4/node-v8.9.4-x64.msi
+https://dl.google.com/go/go1.9.4.windows-amd64.msi
