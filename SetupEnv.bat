@@ -1,5 +1,5 @@
 :: General Project
-@echo on
+@echo off
 :: IMPORTANT PREREQUSITE: You must setup an environment variable by the name BATCHLOCATION pointing to the 
 :: directory that contains these batch files
 
@@ -8,7 +8,7 @@
 SET isSetupCalled=true
 
 :: To pause or not after running a batch file
-SET isPause=false
+SET isPause=true
 
 :: The base directory where your source code is located
 SET frontend_directory=C
@@ -28,7 +28,7 @@ SET backend_framework=go
 :: Location of the downloadable url of the apps you use and where they get downloaded
 :: Set this up if you're using DownloadMyApps.bat
 SET my_apps=%BATCHLOCATION%\config\myapps.txt
-SET downloads=C:\Users\n.ihab\Downloads
+SET downloads=C:\Users\iha001\Downloads
 
 :: Path to your log file
 :: Set this up if you're using LogEveryHour.bat

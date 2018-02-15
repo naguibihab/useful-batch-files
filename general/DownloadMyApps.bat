@@ -13,11 +13,12 @@ set _isPause=%isPause%
 
 ::operations
 for /f %%i in (%my_apps%) do (
-    echo "Downloading %%i..."
-    BITSADMIN /transfer /download %%i %downloads%\setup.exe > nul
-    echo "Installing %%i"
-    %downloads%\setup.exe /S
-    del %downloads%\setup.exe
+	start "" %%i
 )
+echo "Once all installs are done hit enter"
+pause
+
+for /r "%downloads%" %%a in (*.exe) do start "" "%%~fa"
+for /r "%downloads%" %%a in (*.msi) do start "" "%%~fa"
 
 if "%_isPause%" equ "true" pause

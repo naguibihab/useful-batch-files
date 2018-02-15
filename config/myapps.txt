@@ -4,7 +4,7 @@ https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.70-installer.msi
 https://notepad-plus-plus.org/repository/7.x/7.5/npp.7.5.Installer.exe
 https://github.com/git-for-windows/git/releases/download/v2.14.1.windows.1/Git-2.14.1-64-bit.exe
 https://download.teamviewer.com/download/TeamViewer_Setup.exe
-https://dl.pstmn.io/download/latest/win64/Postman-win64-5.2.0-Setup.exe
-https://download.filezilla-project.org/client/FileZilla_3.27.1_win64-setup_bundled4.exe
+https://app.getpostman.com/app/download/win64?_ga=2.192680419.895914925.1518665678-890014526.1518665678
+https://download.filezilla-project.org/client/FileZilla_3.30.0_win64-setup_bundled.exe
 https://download.scdn.co/SpotifySetup.exe
 https://downloads.slack-edge.com/releases_x64/SlackSetup.exe
