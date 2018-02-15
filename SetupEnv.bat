@@ -16,10 +16,10 @@ SET backend_directory=C
 
 :: The folders where your primary & secondary source code is located
 :: I like to have two source code folders, if you don't then just have them pointing to the same folder
-SET frontend_primary_source_code=\xampp\htdocs\csiro\paidright
-SET frontend_secondary_source_code=\xampp\htdocs\csiro\paidright_copy
-SET backend_primary_source_code=\xampp\htdocs\golang-projects\src\data61.githost.io\digital-regulation\data-import-service
-SET backend_secondary_source_code=\xampp\htdocs\golang-projects\src\data61.githost.io\digital-regulation\data-import-service_copy
+SET frontend_primary_source_code=\Users\iha001\Dev\csiro\paidright
+SET frontend_secondary_source_code=\Users\iha001\Dev\csiro\paidright_copy
+SET backend_primary_source_code=\Users\iha001\Dev\golang-projects\src\data61.githost.io\digital-regulation\data-import-service
+SET backend_secondary_source_code=\Users\iha001\Dev\golang-projects\src\data61.githost.io\digital-regulation\data-import-service_copy
 
 :: Frameworks used. We use these as prefixes in some batch files
 SET frontend_framework=angular
@@ -53,7 +53,7 @@ SET build_folder=dist
 :: Location of mongod.exe
 SET mongo_bin=C:\Program Files\MongoDB\Server\3.6\bin\mongod.exe
 :: Database directory Path
-SET mongo_dbpath=C:\xampp\htdocs\mongo\data\db
+SET mongo_dbpath=C:\Users\iha001\Dev\mongo\data\db
 
 ::::::::::::::::::::::::::::::::::::::::::   Go    ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :: If you're using Golang set these up
