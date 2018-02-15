@@ -25,7 +25,7 @@ SET backend_secondary_source_code=\xampp\htdocs\golang-projects\src\data61.githo
 SET frontend_framework=angular
 SET backend_framework=go
 
-:: Location of the downloadable url of the apps you use and where they get downloaded
+:: Location of the downloadable url of the apps you use and where they get downloaded by default
 :: Set this up if you're using DownloadMyApps.bat
 SET my_apps=%BATCHLOCATION%\config\myapps.txt
 SET downloads=C:\Users\iha001\Downloads
