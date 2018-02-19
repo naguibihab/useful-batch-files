@@ -16,8 +16,8 @@ SET backend_directory=C
 
 :: The folders where your primary & secondary source code is located
 :: I like to have two source code folders, if you don't then just have them pointing to the same folder
-SET frontend_primary_source_code=\Users\iha001\Dev\csiro\paidright
-SET frontend_secondary_source_code=\Users\iha001\Dev\csiro\paidright_copy
+SET frontend_primary_source_code=\Users\iha001\Dev\paidright
+SET frontend_secondary_source_code=\Users\iha001\Dev\paidright_copy
 SET backend_primary_source_code=\Users\iha001\Dev\golang-projects\src\data61.githost.io\digital-regulation\data-import-service
 SET backend_secondary_source_code=\Users\iha001\Dev\golang-projects\src\data61.githost.io\digital-regulation\data-import-service_copy
 
