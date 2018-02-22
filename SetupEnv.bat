@@ -53,7 +53,7 @@ SET build_folder=dist
 :: Location of mongod.exe
 SET mongo_bin=C:\Program Files\MongoDB\Server\3.6\bin\mongod.exe
 :: Database directory Path
-SET mongo_dbpath=C:\Users\iha001\Dev\mongo\data\db
+SET mongo_dbpath=C:\Users\iha001\Dev\mongodb\data
 
 ::::::::::::::::::::::::::::::::::::::::::   Go    ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :: If you're using Golang set these up
