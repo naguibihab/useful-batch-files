@@ -48,12 +48,6 @@ start "" "%SYSTEMDRIVE%\Program Files\Git\git-bash.exe"
 REM Opening sublime on backend
 call subl.exe %backend_directory%:%backend_primary_source_code%
 
-if "%backend_framework%" equ "go" (
-call go get
-call go build
-start "" %go_bin% -logtostderr=true -v=-1
-)
-
 )
 
 
