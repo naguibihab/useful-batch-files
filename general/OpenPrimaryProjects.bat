@@ -5,6 +5,12 @@ REM This can be used on computer startup
 REM
 REM prerequisits: git-bash, sublime in PATH,
 REM having a start.bat on the frontend projects
+REM
+REM TODO:
+REM - Need to change this for the frontend and backendd so that it would look for a serve batch file to run
+REM		+ Frontend: run serve.bat or yarn start -- open
+REM		+ Backend: run serve.bat
+REM 
 REM ********************************************************************************
 
 ::setup
@@ -19,6 +25,7 @@ set _isPause=%isPause%
 if "%mongo_bin%" neq "" (
 REM initiating mongo
 start "" "%mongo_bin%" --dbpath "%mongo_dbpath%"
+:: call %BATCHLOCATION%/general/start/mongo << NEED TO TEST THIS
 )
 
 ::::: Frontend :::::
