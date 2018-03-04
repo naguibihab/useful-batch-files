@@ -1,8 +1,8 @@
 REM ********************************************************************************
-REM										Mogno.bat
-REM Starts up your Mongo instance
+REM										Kubernetes.bat
+REM Starts up your Kubernetes
 REM
-REM prerequisits: Having mongo variables setup in the SetupEnv.bat file
+REM prerequisits: Having kubectl setup and connected to your remote cluster
 REM ********************************************************************************
 
 ::setup
@@ -12,6 +12,8 @@ call %BATCHLOCATION%/SetupEnv.bat
 set _isPause=%isPause%
 
 ::operations
-start "Mongo" "%mongo_bin%" --dbpath "%mongo_dbpath%"
+start "Kubernetes" kubectl proxy
 
-if "%_isPause%" equ "tr	ue" pause
+start "" "http://127.0.0.1:8001/ui"
+
+if "%_isPause%" equ "true" pause
