@@ -1,0 +1,1 @@
+k logs %1 %2 %3 -c data-import-service
