@@ -26,15 +26,19 @@ set _isPause=%isPause%
 :: check if its called by human or by another batch file
 if "%_human_or_batch%" equ "" (
 set /P _branch_name=Branch: 
+set /P _open_url=Open on window? [y/n]:
 goto defaults
 )
 :: else, get the inputs from the parameters
 set _branch_name=%1
+set _open_url=%2
 set _isPause=false
 
 ::defaults
 :defaults
-:: There are no defaults for this file
+if "%_open_url%" equ "" (
+set _open_url=true
+)
 
 ::operations
 echo moving to %frontend_directory%:%frontend_secondary_source_code%
@@ -71,6 +75,8 @@ call yarn build
 
 xcopy "%build_folder%" "%base_destination%\%_branch_name%" /s/e/c/y/f
 
-start "" "%base_url%/%_branch_name%"
+if "%_open_url%" equ "y" (
+start "" %base_url%/%_branch_name%
+)
 
 if "%_isPause%" equ "true" pause
