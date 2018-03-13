@@ -34,7 +34,7 @@ set _isPause=false
 
 ::defaults
 :defaults
-:: No defaults in that file, but I'm keeping that for consistency
+:: There are no defaults for this file
 
 ::operations
 echo moving to %frontend_directory%:%frontend_secondary_source_code%
@@ -71,6 +71,6 @@ call yarn build
 
 xcopy "%build_folder%" "%base_destination%\%_branch_name%" /s/e/c/y/f
 
-start "" %base_url%/%_branch_name%
+start "" "%base_url%/%_branch_name%"
 
 if "%_isPause%" equ "true" pause

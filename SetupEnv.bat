@@ -1,5 +1,5 @@
 :: Paidright Project
-@echo off
+@echo on
 :: IMPORTANT PREREQUSITE: You must setup an environment variable by the name BATCHLOCATION pointing to the 
 :: directory that contains these batch files
 
@@ -76,14 +76,18 @@ SET go_bin=
 ::::::: S3 ::::::::
 :: dev_s3_bucket is considered the default bucket in all batch files
 :: Any sensetive data can be stored as an environment variable
-SET dev_s3_bucket=%ENV_dev_s3_bucket%
+SET dev_s3_bucket=angular-productivity-talk
 SET stg_s3_bucket=%ENV_stg_s3_bucket%
 SET prod_s3_bucket=%ENV_prod_s3_bucket%
 
 ::::::: Cloud Front ::::::
-SET dev_cf_distribution_id=%ENV_dev_cf_dist%
+SET dev_cf_distribution_id=E1Z9U14FY8R05Q
 SET stg_cf_distribution_id=%ENV_stg_cf_dist%
 SET prod_cf_distribution_id=%ENV_prod_cf_dist%
+
+SET dev_url=http://angular-productivity-talk.s3-website-us-west-2.amazonaws.com/
+SET stg_url=%ENV_stg_url%
+SET prod_url=%ENV_prod_url%
 
 ::::::: RDS ::::::
 SET rds_list=

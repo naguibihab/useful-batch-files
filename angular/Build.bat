@@ -1,5 +1,7 @@
 REM ********************************************************************************
 REM									Build.bat
+REM
+REM
 REM As opposed to CheckoutBuild.bat this file builds the primary frontend sourcecode
 REM and copies it to the targeted location without checking out from git.
 REM I use that to build code that I don't want to commit
@@ -36,8 +38,27 @@ echo moving to %frontend_directory%:%frontend_primary_source_code%
 %frontend_directory%:
 cd %frontend_primary_source_code%
 
+echo installing dependencies...
+if "%installUsingNpm%" equ "true" (
+call npm install
+)
+if "%installUsingYarn" equ "true" (
+call yarn install
+)
+if "%installUsingBower%" equ "true" (
+call bower install
+)
+
 echo building...
+if "%buildUsingNg%" equ "true" (
+call ng build
+)
+if "%buildUsingGrunt%" equ "true" (
 call grunt build
+)
+if "%buildUsingYarn%" equ "true" (
+call yarn build
+)
 
 xcopy "%build_folder%" "%base_destination%\%_branch_name%" /s/e/c/y/f
 

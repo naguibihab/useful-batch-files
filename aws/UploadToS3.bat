@@ -17,6 +17,7 @@ if "%_human_or_batch%" equ "" (
 set /P _source=Source folder: 
 set /P _s3_bucket=Bucket leave empty for default: 
 set /P _cf_distribution_id=Cloud Front Distribution ID leave empty for default:
+set /P _url=URL of s3 bucket:
 
 goto defaults
 )
@@ -24,6 +25,7 @@ goto defaults
 set _source=%1
 set _s3_bucket=%2
 set _cf_distribution_id=%3
+set _url=%4
 set _isPause=false
 
 ::defaults
@@ -34,6 +36,9 @@ set _s3_bucket=%dev_s3_bucket%
 if "%_cf_distribution_id%" equ "" (
 set _cf_distribution_id=%dev_cf_distribution_id%
 )
+if "%_url%" equ "" (
+set _url=%dev_url%
+)
 
 ::operations
 call aws s3 cp %_source% s3://%_s3_bucket% --recursive
@@ -43,5 +48,8 @@ if "%_cf_distribution_id%" neq "" (
 call aws cloudfront create-invalidation --distribution-id %_cf_distribution_id% --paths /*
 )
 
+start "" "%_url%"
+
 echo All done, uploaded to %_s3_bucket%
+
 if "%_isPause%" equ "true" pause
