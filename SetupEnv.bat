@@ -48,6 +48,16 @@ SET base_url=http://10.0.2.65
 :: The folder where you built code is copied
 SET build_folder=dist
 
+:: The stuff you use to install
+SET installUsingNpm=false
+SET installUsingYarn=true
+SET installUsingBower=false
+
+:: The stuff you use to build
+SET buildUsingNg=false
+SET buildUsingGrunt=false
+SET buildUsingYarn=true
+
 :::::::::::::::::::::::::::::::::::::::::: MongoDB :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :: If you're using MongoDB set these up
 :: Location of mongod.exe
