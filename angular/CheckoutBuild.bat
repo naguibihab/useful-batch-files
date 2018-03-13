@@ -46,9 +46,28 @@ call git fetch --all
 call git checkout origin/%_branch_name% --force
 call git pull --force
 
-echo building...
+echo installing dependencies...
+if "%installUsingNpm%" equ "true" (
+call npm install
+)
+if "%installUsingYarn" equ "true" (
+call yarn install
+)
+if "%installUsingBower%" equ "true" (
 call bower install
+)
+
+echo building...
+if "%buildUsingNg%" equ "true" (
+call ng build
+)
+if "%buildUsingGrunt%" equ "true" (
 call grunt build
+)
+if "%buildUsingYarn%" equ "true" (
+call yarn build
+)
+
 
 xcopy "%build_folder%" "%base_destination%\%_branch_name%" /s/e/c/y/f
 

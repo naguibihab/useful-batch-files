@@ -16,7 +16,7 @@ set _isPause=%isPause%
 
 ::inputs
 if "%_human_or_batch%" equ "" (
-set /P _branch_name=Branch:
+set /P _branch_name=Hey Man, what branch do you want to build:
 set /P _env=Enviroment [d]evelopment [s]taging or [p]roduction:
 
 goto defaults
