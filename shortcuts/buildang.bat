@@ -1,0 +1,1 @@
+call %BATCHLOCATION%/angular/SmartCheckoutBuildUpload.bat

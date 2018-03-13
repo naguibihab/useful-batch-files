@@ -1,1 +1,1 @@
-paidright
+angular-productivity-talk

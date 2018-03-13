@@ -12,18 +12,18 @@ SET isPause=false
 
 :: The base directory where your source code is located
 SET frontend_directory=C
-SET backend_directory=C
+SET backend_directory=
 
 :: The folders where your primary & secondary source code is located
 :: I like to have two source code folders, if you don't then just have them pointing to the same folder
-SET frontend_primary_source_code=\Users\iha001\Dev\paidright
-SET frontend_secondary_source_code=\Users\iha001\Dev\paidright_copy
-SET backend_primary_source_code=\Users\iha001\Dev\golang-projects\src\data61.githost.io
-SET backend_secondary_source_code=\Users\iha001\Dev\golang-projects\src\data61.githost.io_copy
+SET frontend_primary_source_code=\Users\iha001\Dev\angular-productivity-talk
+SET frontend_secondary_source_code=\Users\iha001\Dev\angular-productivity-talk_copy
+SET backend_primary_source_code=
+SET backend_secondary_source_code=
 
 :: Frameworks used. We use these as prefixes in some batch files
 SET frontend_framework=angular
-SET backend_framework=go
+SET backend_framework=
 
 :: Location of the downloadable url of the apps you use and where they get downloaded
 :: Set this up if you're using DownloadMyApps.bat
@@ -40,8 +40,7 @@ SET log_file=C:\Users\n.ihab\Google Drive\Productivity\energy levels.csv
 SET base_destination=C:\xampp\htdocs
 
 :: The base url that is pointing to your destination folder (in most cases it's localhost)
-SET base_url=http://10.0.2.65
-
+SET base_url=http://localhost
 
 :::::::::::::::::::::::::::::::::::::::::: Angular :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :: If you're using angular set these up
@@ -61,14 +60,14 @@ SET buildUsingYarn=true
 :::::::::::::::::::::::::::::::::::::::::: MongoDB :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :: If you're using MongoDB set these up
 :: Location of mongod.exe
-SET mongo_bin=C:\Program Files\MongoDB\Server\3.6\bin\mongod.exe
+SET mongo_bin=
 :: Database directory Path
-SET mongo_dbpath=C:\Users\iha001\Dev\mongodb\data
+SET mongo_dbpath=
 
 ::::::::::::::::::::::::::::::::::::::::::   Go    ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :: If you're using Golang set these up
 :: Name of binary file generated
-SET go_bin=data-import-service
+SET go_bin=
 
 :::::::::::::::::::::::::::::::::::::::::: AWS :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :: If you're using AWS and have the CLI installed then set these up
@@ -87,11 +86,11 @@ SET stg_cf_distribution_id=%ENV_stg_cf_dist%
 SET prod_cf_distribution_id=%ENV_prod_cf_dist%
 
 ::::::: RDS ::::::
-SET rds_list=rds-instance-1 rds-instance-2
+SET rds_list=
 
 :::::::::::::::::::::::::::::::::::::::::: Kubernetes ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :: Set this up if you're using the kubernetes shortcuts in the shortcuts folder
-SET kubernetes_namespace=%BATCHLOCATION%\config\kubernetesnamespace.txt
+SET kubernetes_namespace=
 
 :::::::::::::::::::::::::::::::::::::::::: Operations :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :: Operations that happen for each batch file such as printing out the current envrionment
