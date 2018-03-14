@@ -1,24 +1,18 @@
 # useful-batch-files
-A bunch of useful batch files for everyday development jobs.
-Especially useful for:
-- Angular Development:
-    - Bower install
-	- Grunt build
-	- Copy dist folder after build
-- Common AWS tasks
-    - Upload to S3
-	- Invalidate CloudFront
-	- Stop & Start RDS
-- General
-	- Copy folder & append to its name
-	- Open git at a particular location
-	
-You can run any of these batch files manually and enter the inputs as they come up or by calling the batch file in cmd and passing the inputs as parameters, i.e. `D:\Dev\useful-batch-files\angular\CheckoutBuild.bat master`
+A bunch of useful batch files for everyday frontend and backend development jobs.
 
-##### IMPORTANT PREREQUSITE:
+## Usage 
+
+### IMPORTANT PREREQUSITE:
 You must setup an environment variable by the name **BATCHLOCATION** pointing to the directory that contains these batch files
 
-	
+### Seting up the SetupEnv.bat
+Start by exploring SetupEnv.bat file in the root and adding in your values, there might be a lot of variables in there that you won't need, don't feel like you have to fill in everything.
+
+If you have any questions about using the files for your own development environment tweet me @naguibihab
+
+## Contribution
+
 Feel free to fork and contribute to that repo
 
 ### To create a new batch file use this template:
