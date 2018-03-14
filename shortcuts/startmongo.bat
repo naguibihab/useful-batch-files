@@ -1,0 +1,1 @@
+call %BATCHLOCATION%/general/start/mongo.bat

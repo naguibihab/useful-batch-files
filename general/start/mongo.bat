@@ -14,4 +14,4 @@ set _isPause=%isPause%
 ::operations
 start "Mongo" "%mongo_bin%" --dbpath "%mongo_dbpath%"
 
-if "%_isPause%" equ "tr	ue" pause
+if "%_isPause%" equ "true" pause
