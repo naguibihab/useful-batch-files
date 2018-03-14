@@ -1,0 +1,1 @@
+start "" "%SYSTEMDRIVE%\Program Files\Git\git-bash.exe"
